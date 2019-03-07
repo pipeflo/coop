@@ -1,0 +1,68 @@
+<div *ngIf="(productControl.cartlistCount$ | async) == 0">
+  <mat-chip-list>
+      <mat-chip color="warn" selected="true">YOU HAVE NO ITEMS IN YOUR SHOPPING CART.</mat-chip>
+  </mat-chip-list>
+  <a [routerLink]="['/']" mat-raised-button color="primary" class="mt-2">Continue shopping</a>
+</div>
+
+<mat-card *ngIf="(productControl.cartlistCount$ | async) > 0" class="p-0">
+  <!--<div class="wrapper" *ngIf="wishlistSandbox.wishlistLoading$ | async">-->
+    <!--<div class="overlay">-->
+      <!--<div class="spinner-wrapper">-->
+        <!--<app-spinner [isShow]="wishlistSandbox.wishlistLoading$ | async"></app-spinner>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <div class="mat-table cart-table">
+    <div class="mat-header-row">
+      <div class="mat-header-cell">Product</div>
+      <div class="mat-header-cell">Name</div>
+      <div class="mat-header-cell">Price</div>      
+      <div class="mat-header-cell">Quantity</div>
+      <div class="mat-header-cell">Total</div>
+      <div class="mat-header-cell text-center">
+        <div class="px-1">
+          <button mat-raised-button color="warn" (click)="clear()">Clear All</button>
+        </div>
+      </div>
+    </div>
+    <div *ngFor="let product of productControl.cartlist$ | async" class="mat-row">
+      <div class="mat-cell">
+        <img *ngIf="product.Images && product.Images[0]" [src]="imagePath + '?width=60&height=60&path=' + product.Images[0].containerName + '&name=' + product.Images[0].image">
+        <img *ngIf="product.productImage && product.productImage[0]" [src]="imagePath + '?width=60&height=60&path=' + product.productImage[0].containerName + '&name=' + product.productImage[0].image">
+      </div>
+      <div class="mat-cell"><a [routerLink]="['/products', product.id, product.name]" class="product-name">{{product.name}}</a></div>
+      <div class="mat-cell">{{product.price | currency:'INR':'symbol-narrow'}}</div>
+      <div class="mat-cell"><button mat-button (click)="changeCount(product, false)"><mat-icon class="icon-remove">remove</mat-icon></button>{{product.productCount}}<button mat-button (click)="changeCount(product, true)"><mat-icon  class="icon-add">add</mat-icon></button></div>
+      <div class="mat-cell">{{(product.price * product.productCount) | currency:'INR':'symbol-narrow'}}</div>
+      <div class="mat-cell text-center">
+        <div class="p-1">
+          <button mat-mini-fab color="warn" (click)="removeProduct(product)" matTooltip="Clear">
+              <mat-icon>close</mat-icon>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+    <div class="mat-row">
+      <div class="mat-cell"><a [routerLink]="['/']" mat-raised-button color="primary">Continue shopping</a></div>
+      <div class="mat-cell"></div>
+      <div class="mat-cell"></div>
+      <div class="mat-cell text-right">
+        <div fxLayout="column" fxLayoutAlign="center end" class="grand-total px-2">
+          <!--<span>SubTotal:</span>-->
+          <!--<span class="text-muted">Discount:</span>-->
+          <span class="new-price">Grand total:</span>
+        </div>        
+      </div>
+      <div class="mat-cell">
+        <div fxLayout="column" fxLayoutAlign="center start" class="grand-total">
+          <!--<span>{{(productControl.totalCartPrice$ | async)}}</span>-->
+          <!--<span class="text-muted">200</span>-->
+          <span class="new-price">{{ (productControl.totalCartPrice$ | async) | currency:'INR':'symbol-narrow'}}</span>
+        </div>
+      </div>
+      <div class="mat-cell text-center"><a [routerLink]="['/checkout']" mat-raised-button color="primary">Proceed To Checkout</a></div>
+    </div>
+  </div>
+</mat-card>

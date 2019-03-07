@@ -1,0 +1,41 @@
+{
+  "ServerError401": "Access not allowed. Please login.",
+  "ServerError403": "Access forbidden. Please provide correct credentials",
+  "ServerError404": "An error occurred. Please contact your administrator",
+  "ServerError500": "An error occurred. Please contact your administrator",
+  "SuccessNotificationTitle": "Success",
+  "ErrorNotificationTitle": "Error",
+  "InfoNotificationTitle": "Info",
+  "WarningNotificationTitle": "Warning",
+  "SaveBtn": "Save",
+  "EditBtn": "Edit",
+  "CancelBtn": "Cancel",
+  "BackBtn": "Back",
+  "GridEmptyLabel": "No available items",
+  "ConfirmDialog": {
+    "Title": "Please confirm",
+    "Content": "Do you want to leave without saving the changes?",
+    "SubmitBtn": "Yes",
+    "CancelBtn": "No"
+  },
+  "Auth": {
+    "username": "Username",
+    "Password": "Password",
+    "submit": "Submit",
+    "Register": {
+      "Title": "Sign Up",
+      "Submit": "Create account",
+      "Back": "Go Back",
+      "SuccessMessage": "Your account has been successfully created"
+    }
+  },
+  "Jobcard": {
+    "Jobcard_list": "Jobcard List",
+    "Submit": "Submit",
+    "Save": "Save",
+    "Cancel": "Cancel"
+  },
+  "Dashboard": {
+    "Stock": "Stock"
+  }
+}

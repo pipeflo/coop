@@ -1,0 +1,41 @@
+<app-catalog-header></app-catalog-header>
+<div class="row products-section">
+  <div class="col-12">
+    <div class="card">
+      <div class="product-ts-left">
+        <ul>
+          <li>
+            <p>Total Product</p>
+            <h3>{{layoutSandbox.totalProductCount$ | async}} 
+              <button type="button" class="btn" placement="right" ngbTooltip="Tooltip on right">
+              <img src="assets/img/info-ico.png"> </button>
+            </h3>
+          </li>
+          <li>
+            <p>Active Product</p>
+            <h3>{{layoutSandbox.activeProductCount$ | async}}  <button type="button" class="btn" placement="right" ngbTooltip="Tooltip on right">
+              <img src="assets/img/info-ico.png"> </button></h3>
+          </li>
+          <li>
+            <p>In-Active Product</p>
+            <h3>{{layoutSandbox.inActiveProductCount$ | async}}  <button type="button" class="btn" placement="right" ngbTooltip="Tooltip on right">
+              <img src="assets/img/info-ico.png"> </button></h3>
+          </li>
+          <li>
+            <p>Total Category</p>
+            <h3>{{layoutSandbox.totalCatagoryCount$ | async}}  <button type="button" class="btn" placement="right" ngbTooltip="Tooltip on right">
+              <img src="assets/img/info-ico.png"> </button></h3>
+          </li>
+          <li>
+            <p>Featured Product</p>
+            <h3>{{layoutSandbox.featuredProductCount$ | async}}  <button type="button" class="btn" placement="right" ngbTooltip="Tooltip on right">
+              <img src="assets/img/info-ico.png"> </button></h3>
+          </li>
+        </ul>
+      </div>
+      <!--Left-->
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

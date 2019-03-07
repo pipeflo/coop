@@ -1,0 +1,21 @@
+/*
+* SpurtCommerce
+* version 2.0.0
+* http://www.spurtcommerce.com
+*
+* Copyright (c) 2019 PICCOSOFT
+* Author piccosoft <support@spurtcommerce.com>
+* Licensed under the MIT license.
+*/
+
+export class CategoryupdateResponseModel {
+  public user: any = {};
+
+  constructor(categoryupdateFormResponse: any) {
+    console.log('response', categoryupdateFormResponse);
+
+    this.user = categoryupdateFormResponse|| '';
+    // localStorage.setItem('userToken', this.accessToken);
+
+  }
+}

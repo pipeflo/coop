@@ -1,0 +1,132 @@
+<div class="row products-section">
+    <div class="col-12">
+        <div class="breadcrumbs-row noborder">
+            <div class="bc-col">
+                <ul>
+                    <li><a href="javascript:void(0)"> Sales </a></li>
+                    <li> View Orders</li>
+                </ul>
+            </div>
+            <div class="bc-col-btn ap-col-btn">
+
+            </div>
+        </div>
+    </div>
+    <!--Breadcrumbs-->
+</div>
+
+<div class="row vieworder-wrap" *ngIf="(orderSandbox.getvieworderData$ | async) as detail">
+
+    <div class="order-wrap">
+
+        <div class="flex order-top">
+            <h3>Order Id #{{detail.orderId}}</h3>
+            <a *ngIf="(orderSandbox.settingDetail$ | async) as setting" href="javascript:void(0)" (click)="downloadInvoiceDetail(detail, setting)">Download Invoice</a>
+        </div>
+        <!-- Top -->
+
+        <div class="order-content">
+
+            <div class="flex order-row">
+
+                <div class="order-col">
+                    <h3>Order Id #{{detail.orderId}}</h3>
+                    <div class="order-lft-detail">
+                        <h4><span>Order Date </span> {{detail.createdDate | date:"dd/MM/yyyy"}} </h4>
+                        <h4>
+                            <span>Order Status </span>
+                            <span class="process">
+                <div class="form-group">
+
+                  <select class="custom-select col-12" (change)="onItemChange($event)">
+                     <option *ngFor="let data of orderStatusSandbox.getOrderstatuslist$ | async"
+                           value="{{data.orderStatusId}}">{{data.name}}</option>
+                  </select>
+
+                </div>
+              </span>
+                        </h4>
+                    </div>
+                </div>
+
+
+                <div class="order-col">
+                    <h3>Customer Information</h3>
+                    <div class="order-lft-detail">
+                        <h4><span>Customer Name </span>{{detail.shippingFirstname + ' ' + detail.shippingLastname}}</h4>
+                        <h4><span>Email Id </span> <a href="javascript:void(0)">{{detail.email}}</a></h4>
+                    </div>
+                </div>
+                <!--  -->
+
+            </div>
+            <!--  Order Row-->
+
+            <div class="flex order-row">
+
+                <div class="order-col">
+                    <h3>Shipping Address <a href="javascript:void(0)">Edit</a></h3>
+                    <div class="order-lft-detail">
+                        <p class="addr">{{detail.shippingAddress1}}</p>
+                        <p class="addr">{{detail.shippingAddress2}}</p>
+                        <p class="addr">{{detail.shippingCity}}</p>
+                        <p class="addr">{{detail.shippingCountry}}</p>
+                        <p class="phone">Phone : <span>{{detail.telephone}}</span></p>
+                    </div>
+                </div>
+                <!--  -->
+
+                <div class="order-col">
+                    <h3>Billing Address <a href="javascript:void(0)">Edit</a></h3>
+                    <div class="order-lft-detail">
+                        <p class="addr">{{detail.shippingAddress1}}</p>
+                        <p class="addr">{{detail.shippingAddress2}}</p>
+                        <p class="addr">{{detail.shippingCity}}</p>
+                        <p class="addr">{{detail.shippingCountry}}</p>
+                        <p class="phone">Phone : <span>{{detail.telephone}}</span></p>
+                    </div>
+                </div>
+                <!--  -->
+
+            </div>
+            <!--  Order Row-->
+
+            <div class="order-table">
+                <h3>Items List</h3>
+                <table class="table">
+                    <tr>
+                        <th>Products</th>
+                        <th width="20%" class="text-right">Price</th>
+                        <th width="20%" class="text-right">Qty</th>
+                        <th width="20%" class="text-right">Total</th>
+                    </tr>
+                    <tr *ngFor="let order of detail.productList">
+                        <td>
+                            <div *ngIf="order.productDetail.image" class="order-img"><img [src]="imageUrl + '?width=60&height=60&path=' +order.productDetail.imagePath + '&name='+ order.productDetail.image"></div>
+                            {{order.name}}
+                        </td>
+                        <td class="text-right">{{order.productDetail.price | currency:'INR':'symbol-narrow'}}</td>
+                        <td class="text-right">{{order.productDetail.quantity}}</td>
+                        <td class="text-right">{{order.total | currency:'INR':'symbol-narrow'}}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right total-amount">Total Amount</td>
+                        <td class="text-right total-amount"><b>{{detail.total | currency:'INR':'symbol-narrow'}}</b></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Table -->
+
+            <div class="flex order-btn" >
+                <a href="javascript:void(0)"> Cancel </a>
+                <a *ngIf="(orderSandbox.settingDetail$ | async) as setting" href="javascript:void(0)" class="dload" (click)="downloadInvoiceDetail(detail, setting)"> Download Invoice </a>
+            </div>
+
+        </div>
+        <!-- Order Content -->
+
+    </div>
+    <!-- Order Wrap -->
+
+</div>
+

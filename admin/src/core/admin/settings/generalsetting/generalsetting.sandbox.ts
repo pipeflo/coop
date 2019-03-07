@@ -1,0 +1,37 @@
+/*
+* SpurtCommerce
+* version 2.0.0
+* http://www.spurtcommerce.com
+*
+* Copyright (c) 2019 PICCOSOFT
+* Author piccosoft <support@spurtcommerce.com>
+* Licensed under the MIT license.
+*/
+import {Injectable} from '@angular/core';
+import {Store} from '@ngrx/store';
+import * as generalsetting from './/generalsetting-action/generalsetting.action';
+import * as store from '../../../app.state.interface';
+import {getGeneralSettings, getNewGeneralSettings} from './generalsetting-reducer/generalsetting.selector';
+import {GeneralSettingForm} from './generalsetting-model/generalsetting.model';
+
+
+@Injectable()
+export class GeneralSettingSandbox {
+
+    public getNewGeneralSettings$ = this.appState.select(getNewGeneralSettings);
+    public getGeneralSettings$ = this.appState.select(getGeneralSettings);
+
+    constructor(protected appState: Store<store.AppState>) {
+    }
+     // Create General Setting
+    public createGeneralSetting(value) {
+        this.appState.dispatch(new generalsetting.DoNewGeneralSettingAction(new GeneralSettingForm(value)));
+    }
+    // Get General Setting
+    public getGeneralSetting() {
+        this.appState.dispatch(new generalsetting.DoGetGeneralSettingAction());
+    }
+
+
+
+}

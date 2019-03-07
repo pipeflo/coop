@@ -1,0 +1,55 @@
+<mat-chip-list *ngIf="(wishlistSandbox.wishlist$ | async)?.length == 0">
+    <mat-chip color="warn" selected="true">YOU HAVE NO ITEMS IN WISH LIST.</mat-chip>
+</mat-chip-list>
+
+<mat-card *ngIf="(wishlistSandbox.wishlist$ | async)?.length > 0" class="p-0">
+    <div class="wrapper" *ngIf="wishlistSandbox.wishlistLoading$ | async">
+        <div class="overlay">
+            <div class="spinner-wrapper">
+                <app-spinner [isShow]="wishlistSandbox.wishlistLoading$ | async"></app-spinner>
+            </div>
+        </div>
+    </div>
+    <div class="mat-table wishlist-table">
+        <div class="mat-header-row">
+            <div class="mat-header-cell">Product</div>
+            <div class="mat-header-cell">Name</div>
+            <div class="mat-header-cell">Price</div>
+            <div class="mat-header-cell">Availabile Date</div>
+            <!--<div class="mat-header-cell">Quantity</div>-->
+            <div class="mat-header-cell">
+                <div class="px-1">Action
+                    <!--<button mat-raised-button color="warn" (click)="clear()">Action</button>-->
+                </div>
+            </div>
+        </div>
+        <div *ngFor="let product of wishlistSandbox.wishlist$ | async" class="mat-row">
+            <div class="mat-cell"><img *ngIf="product.productImage"
+                                       [src]="imagePath + '?width=60&height=60&path=' + product.productImage.containerName + '&name=' + product.productImage.image">
+            </div>
+            <div class="mat-cell"><a [routerLink]="['/products', product.id, product.name]" class="product-name">{{product.product.name}}</a>
+            </div>
+            <div class="mat-cell">{{product.product.price | currency:'INR':'symbol-narrow' }}</div> <!-- | number : '1.2-2' -->
+            <div class="mat-cell">{{product.product.dateAvailable | date:'dd/MM/yyyy'}}</div>
+            <!--<div class="mat-cell text-muted">-->
+            <!--<app-controls [product]="product" [type]="'wish'" (onQuantityChange)="getQuantity($event)"></app-controls>-->
+            <!--</div>-->
+            <div class="mat-cell">
+                <div class="p-1">
+                    <button mat-mini-fab color="primary" (click)="addToCart(product)" matTooltip="Add to cart">
+                        <mat-icon>add_shopping_cart</mat-icon>
+                    </button>
+                    <button mat-mini-fab color="warn" (click)="remove(product.wishlistProductId)" matTooltip="Clear"
+                            class="remove">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                    <span [hidden]="!(wishlistSandbox.wishlistLoading$ | async)"
+                          class="spinner-border spinner-border-sm pull-right" role="status" aria-hidden="true"></span>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</mat-card>

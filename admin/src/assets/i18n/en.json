@@ -1,0 +1,738 @@
+{
+  "CommonFormAll": {
+      "Doyouwanttodelete": "Do you want to delete ?"
+  },
+  "CMS": {
+    "Pages": {
+      "Pages": "Pages",
+      "CMS": "CMS",
+      "Title": "Title",
+      "Content": "Content",
+      "Action": "Action",
+      "NewPages": "New Pages",
+      "AddPages": "Add Pages",
+      "Save": "Save",
+      "Cancel": "Cancel",
+      "GeneralInformation": "General Information",
+      "PageTitle": "Page Title",
+      "PageContent": "Page Content",
+      "Active": "Active",
+      "Yes": "Yes",
+      "No": "No",
+      "MetaTitle": "Meta Title",
+      "MetaKeyword": "Meta Keyword",
+      "MetaContent": "Meta Content",
+      "EnterTitle": "Enter Title",
+      "Advertisement": "Advertisement",
+      "ColdCall": "Cold Call",
+      "EmployeeReferrel": "Employee Referrel",
+      "ExternalReferrel": "External Referrel",
+      "Online": "Online",
+      "New": "New",
+      "ApplyFilters": "Apply Filters",
+      "Reset": "Reset",
+      "Search": "Search"
+    },
+    "Error": {
+      "PageTitleIsRequired": "Page Title is required",
+      "PageContentIsRequired": "Page Content is required",
+      "ThisFieldIsRequired": "This field is required",
+      "MetaTitleIsRequired": "Meta Title is required",
+      "MetaKeywordIsRequired": "Meta Keyword is required",
+      "MetaContentIsRequired": "Meta Content is required",
+      "DoyouWantToDelete?": "Do you want to delete?"
+    },
+    "Placeholder": {
+      "PageTitle": "Page Title",
+      "PageContent": "page content",
+      "MetaTitle": "meta title",
+      "MetaKeyword": "meta keyword",
+      "MetaContent": "meta content",
+      "TypeHere": "Type here",
+      "EnterTitle": "Enter Title"
+    },
+    "Banners": {
+      "Banners": "Banners",
+      "Image": "Image",
+      "Link": "Link",
+      "Position": "Position",
+      "Action": "Action",
+      "NewBanners": "New Banners",
+      "AddBanners": "AddBanners",
+      "Save": "Save",
+      "Cancel": "Cancel",
+      "BannerTitle": "BannerTitle",
+      "UploadPic": "Upload Pic"
+    },
+    "BannerPlaceholder": {
+      "BannerContent": "Banner content",
+      "EnterLink": "Enter Link",
+      "EnterPosition": "Enter Position",
+      "BannerTitle": "Banner Title"
+    },
+    "BannerError": {
+      "PositionIsRequired": "Position is Required",
+      "LinkIsRequired": "Link is required",
+      "BannerContentIsRequired": "Banner Content is required",
+      "BannerTitleIsRequired": "Banner Title is required"
+    }
+  },
+  "Sales": {
+    "Orders": {
+      "Orders": "Orders",
+      "OrdersCompleted": "Orders Completed",
+      "OrdersProcessing": "Orders Processing",
+      "LoremIpsum": "Lorem Ipsum",
+      "Products": "Products",
+      "Sales": "Sales",
+      "AddOrder": "Add Order",
+      "Filters": "Filters",
+      "OrderStatus": "Order Status",
+      "Completed": "Completed",
+      "Pending": "Pending",
+      "Hold": "Hold",
+      "OrderId": "Order Id",
+      "CustomerName": "Customer Name",
+      "TotalAmount": "Total Amount",
+      "DateAdded": "Date Added",
+      "MoreFilter": "More Filter",
+      "ApplyFilters": "Apply Filters",
+      "Reset": "Reset",
+      "Export":"Export",
+      "Import":"Import",
+      "Status":"Status",
+      "Action":"Action",
+      "DateModified":"Date Modified",
+      "Delete":"Delete",
+      "Payments":"Payments",
+      "Shipping":"Shipping",
+      "Invoices":"Invoices",
+      "Active":"Active",
+      "In-Active":"In - Active"
+    },
+    "SalesPlaceholder": {
+      "TotalAmount": "Total Amount",
+      "SKUNumber": "Customer Name",
+      "OrderId": "Order Id"
+    }
+  },
+
+
+
+  "Customers":{
+    "Customer":{
+      "Customer":"Customer",
+      "Customers":"Customers",
+      "AddCustomer":"Add Customer",
+      "Delete":"Delete",
+      "Export":"Export",
+      "Import":"Import",
+      "ViewCustomer":"View Customer",
+      "ID":"#ID",
+      "Name":"Name",
+      "E-mailId":"E-mail Id",
+      "Group":"Group",
+      "DateAdded":"Date Added",
+      "Address":"Address",
+      "Action":"Action",
+      "Status":"Status",
+      "View":"View",
+      "Active":"Active",
+      "AddAddress":"Add Address",
+      "AddressLine1":"Address Line 1",
+      "AddressLine2":"Address Line 2",
+      "City":"City",
+      "State": "State" ,
+      "Pincode":"Pincode",
+      "AddressState":"Address State",
+      "Shipping":"Shipping",
+      "Billing":"Billing",
+      "AddressType":"Address Type",
+      "CustomerName":"Customer Name",
+      "Email":"Email",
+      "CustomerGroup":"Customer Group",
+      "Telephone":"Telephone",
+      "MoreInformation":"MoreInformation",
+      "General":"General",
+      "Password":"Password",
+      "AddCustomers":"Add Customers",
+      "Save":"Save",
+      "Cancel":"Cancel",
+      "CustomerDetails":"Customer Details",
+      "ConfirmPassword":"ConfirmPassword",
+      "Enabled":"Enabled",
+      "Disabled":"Disabled",
+      "Newsletter":"Newsletter",
+      "Safe":"Safe",
+      "MailStatus":"Mail Status",
+      "Yes":"Yes",
+      "No":"No"
+    },"Error":{
+      "AddressLine1IsRequired":"Address Line 1 Is Required",
+      "CityIsRequired":"City Is Required",
+      "StateIsRequired":"State Is Required",
+      "CustomerGroupIsRequired":"Customer Group Is Required",
+      "CustomerNameIsRequired":"  Customer Name Is Required",
+      "EmailIsRequired":"Email is required",
+      "EmailMustBeAValidEmailAddress":"Email must be a valid email address",
+      "TelephoneIsRequired":"Telephone Is Required",
+      "Telephoneallownumbersonly":"Telephone Only Allow Numbers Min- 6 && Max - 11",
+      "passwordIsRequired": "password Is Required",
+      "ConfirmpasswordIsMismatch":"Confirm  password Is Mismatch",
+      "newsletterIsRequired":"newsletter Is Required",
+      "StatusIsRequired":"Status Is Required",
+      "SafeIsRequired":"Safe Is Required",
+      "MailstatusIsRequired":"Mail status Is Required",
+      "ConfirmPassword":"Confirm Password",
+      "PincodeIsRequired":"Pincode Is Required",
+      "pincodeallownumbersonly":"Pincode Only Allow Numbers Min- 6 && Max - 8"
+
+    },
+    "CustomerPlaceholder":{
+      "CustomerGroup":"Customer Group",
+      "CustomerName":"Customer Name",
+      "Email":"Email",
+      "Telephone":"Telephone",
+      "Password":"Password"
+    }
+  },
+
+  "Settings": {
+    "SiteSettings":{
+      "SiteSettings":"Site Settings",
+      "SEO":"SEO",
+      "MetaTitle":"MetaTitle",
+      "MetaTagDescription":"MetaTagDescription",
+      "MetatagKeyword":"MetatagKeyword",
+      "Save":"Save",
+      "Cancel":"Cancel"
+    },
+    "Social":{
+      "Social":"Social",
+      "Facebook":"Facebook",
+      "Google":"Google",
+      "Twitter":"Twitter",
+      "Instagram":"Instagram",
+      "TwitterLink":"Twitter link",
+      "GoogleLink":"GoogleLink",
+      "Save":"Save",
+      "Cancel":"Cancel"
+    },
+
+    "Common":{
+      "Settings": "Settings",
+      "Role" : "Role",
+      "User": "User",
+      "GeneralSettings": "General Settings",
+      "Personalize": "Personalize",
+      "SiteSettings": "Site Settings",
+      "Localizations": "Localizations",
+      "PaymentSettings": "Payment Settings",
+      "System": "System",
+      "Appearence": "Appearence"
+    },
+    "generalsettings": {
+      "Settingspath": "Settings > GeneralSettings",
+      "StoreName": "StoreName",
+      "StoreOwner": "StoreOwner",
+      "Address": "Address",
+      "Email": "Email",
+      "Phonenumber": "Phonenumber",
+      "Local": "Local",
+      "Country": "Country",
+      "Region/State":"Region / State",
+      "Language":"Language",
+      "Currency": "Currency",
+      "Save": "Save",
+      "Cancel": "Cancel"
+    },
+    "Appearence": {
+      "Appearence": "Appearence",
+      "SettingsAppearencePath": "Settings > Site Settings > Appearence",
+      "Theme": "Theme",
+       "ChooseTheme": "Choose Theme"
+
+
+    },
+    "Role": {
+      "RoleList": "Role List",
+      "Name": "Name",
+      "Status": "Status",
+      "Action": "Action",
+      "AddNewRole": "Add New Role",
+      "Active": "Active",
+      "InActive": "In - Active",
+      "RoleName": "Role Name",
+      "Status": "Status",
+      "AddNew": "Add New",
+      "Cancle": "Cancle",
+      "Error": {
+        "RoleNameisrequired": "Role Name is required"
+      },
+      "Placeholder": {}
+    },
+    "User": {
+      "UserList": "User List",
+      "UserID": "User ID",
+      "UserName": "User Name",
+      "EmailId": "Email Id",
+      "Role": "Role",
+      "Action": "Action",
+      "AddNewUser": "Add New User",
+      "AddUser": "Add User",
+      "FirstName": "First Name",
+      "LastName": "Last Name",
+      "Email": "Email",
+      "Role": "Role",
+      "UserName": "User Name",
+      "Password": "Password",
+      "Cancle": "Cancel",
+      "Error": {
+        "FirstNameisrequired": "First Name is required",
+        "LastNameisrequired": "Last Name is required",
+        "Emailisrequired": "Email is required",
+        "Emailmustbeavalidemailaddress": "Email must be a valid email address",
+        "Roleisrequired": "Role is required",
+        "UserNameEmailisrequired": "UserName - Email is required",
+        "UserNameEmailmustbeavalidemailaddress": "UserName - Email must be a valid email address",
+        "Passwordisrequired": "Password is required"
+      },
+      "Placeholder": {}
+    },
+    "Local":{
+      "Save": "Save",
+      "Country": {
+        "CountriesList": "Countries List",
+        "CountryName": "Country Name",
+        "IsoCode-1": "Iso Code-1",
+        "IsoCode-2": "Iso Code-2",
+        "Action": "Action",
+        "AddNewCountry": "Add New Country",
+        " AddCountry": " Add Country",
+        "CountryName": "Country Name",
+        "IsoCode-1": "Iso Code-1",
+        "IsoCode-2": "Iso Code-2",
+        "PostalCodeRequired": "Postal Code Required",
+        "Yes": "Yes",
+        "No": "No",
+        "AddCountry": "Add Country",
+        "Cancel": "Cancel",
+        "Error": {
+          "CountryNameisrequired" : "Country Name is required",
+          "IsoCode-1isrequired": "Iso Code-1 is required",
+          "IsoCode-1mustbeatmax2characters": "Iso Code-1 must be at max 2 characters",
+          "IsoCode-2isrequire": "Iso Code-2 is require",
+          "IsoCode-2mustbeatmax3characters": "Iso Code-2 must be at max 3 characters"
+        }
+
+
+      },
+      "Zone": {
+        "ZoneList": "Zone List",
+        "AddNewZone": "Add New Zone",
+        "Country" : "Country",
+        "ZoneName": "Zone Name",
+        "ZoneCode": "Zone Code",
+        "Action": "Action",
+        "Doyouwanttodelete?": "Do you want to delete?",
+        "AddZONE": "Add ZONE",
+        "AddZone": "Add Zone",
+        "Status": "Status",
+        "Cancel": "Cancel",
+        "Enabled" : "Enabled",
+        "Disabled": "Disabled",
+        "No": "NO",
+        "Yes": "YES",
+        "Error": {
+          "ZoneNameisrequired" : "Zone Name is required",
+          "ZoneCodeisrequired": "Zone Code is required",
+          "ZoneCodemustbeatmax30characters": "ZoneCode must be at max 30 characters",
+          "Statusrequired": "Status is required",
+          "IsoCode-2mustbeatmax3characters": "Iso Code-2 must be at max 3 characters",
+          "Countryisrequired": "Country is required"
+        }
+
+
+      },
+      "Orderstatus": {
+        "Save": "Save",
+        "AddOrderStatus": "Add Order Status",
+        "OrderStatusName": "Order Status Name",
+        "Status" : "Status",
+        "Doyouwanttodelete?": "Do you want to delete?",
+        "Cancel": "Cancel",
+        "Enabled" : "Enabled",
+        "Disabled": "Disabled",
+        "No": "NO",
+        "Yes": "YES",
+        "Settingspath": "Settings > Localization > Order Statuses",
+        "OrderStatusList": "Order Status List",
+        "Action": "Action",
+        "Active": "Active",
+        "InActive": "In - Active",
+
+        "Error": {
+          "OrderStatusNameisrequired" : "Order Status Name is required",
+          "OrderStatusisrequired" : "Order Status Status is required"
+        }
+      },
+      "Emailtemplate": {
+        "AddEmailTemplate": "Add Email Template",
+        "Title": "Title",
+        "Subject": "Subject",
+        "Content": "Content",
+        "Status": "Status",
+        "Enabled": "Enabled",
+        "Disabled": "Disabled",
+        "Cancel": "Cancel",
+        "Action": "Action",
+        "EmailTemplate": "Email Template",
+        "Error": {
+          "Titleisrequired": "Title  is required",
+          "Subjectisrequired": "Subject is required",
+          "Contentisrequired": "Content is required",
+          "Statusisrequired": "Status is required"
+        }
+
+      },
+      "Language": {
+        "AddLanguage": "Add Language",
+        "LanguageName": "Language Name",
+        "Code": "Code",
+        "SortOrder": "Sort Order",
+        "Status": "Status",
+        "Enabled": "Enabled",
+        "Disabled": "Disabled",
+        "Cancel": "Cancel",
+        "UploadPic": "Upload Pic",
+        "LanguagesList": "Languages List",
+        "AddNewLanguage": "Add New Language",
+        "Action": "Action",
+        "Error": {
+          "LanguageNameisrequired": "Language Name is required",
+          "codeisrequired": "code is required",
+          "SortOrderisrequired": "Sort Order is required",
+          "Statusisrequired": "Status is required"
+
+        }
+
+      },
+      "StockStatus": {
+        "Save": "Save",
+        "AddStockStatus": "Add Stock Status",
+        "StockStatusName": "Stock Status Name",
+        "Code": "Code",
+        "SortOrder": "Sort Order",
+        "Status": "Status",
+        "Enabled": "Enabled",
+        "Disabled": "Disabled",
+        "Cancel": "Cancel",
+        "UploadPic": "Upload Pic",
+        "Active": "Active",
+        "InActive": "In - Active",
+        "StockStatusList": "Stock Status List",
+        "Action": "Action",
+        "Settingspath": "Settings > Localization > Stock Statuses",
+        "Doyouwanttodelete?": "Do you want to delete?",
+        "Yes": "Yes",
+        "No": "No",
+        "Error": {
+          "Statusisrequired": "Status is required",
+          "Nameisrequired": "Name is required"
+
+        }
+
+      },
+      "Currency": {
+        "SettingsPath": "Settings > Localization >",
+        "CurrencyTitle": "Currency Title",
+        "CurrencyCode": "Currency Code",
+        "SymbolLeft": "Symbol Left",
+        "SymbolRight": "Symbol Right",
+        "Value": "Value",
+        "Status": "Status",
+        "Enabled": "Enabled",
+        "Disabled": "Disabled",
+        "AddCurrency": "Add Currency",
+        "UpdateCurrency": "Update Currency",
+        "Cancel": "Cancel",
+        "Doyouwanttodelete": "Do you want to delete?",
+        "Yes": "YES",
+        "No": "NO",
+        "Delete": "Delete",
+        "SettingsLocalizationCurrenciesPath": "Settings > Localization > Currencies",
+        "AddCurrency": "Add Currency",
+        "CurrencyList": "Currency List",
+        "CurrencyTitle": "Currency Title",
+        "Code": "Code",
+        "Value": "Value",
+        "LastUpdate": "Last Update",
+        "Action": "Action",
+        "Error": {
+          "Currencycodeisrequired": "Currency code is required",
+          "MaxLength3": "Max Length 3",
+          "valueisMustinnumber": "value is Must in number",
+          "statusisrequired": "status is required",
+          "currencytittle": "Currency Title"
+        }
+
+
+      }
+    }
+  },
+  "Profile":{
+    "Auth": {
+      "Welcome": "Welcome",
+      "Loremipsumdummytextforprintingandtechnology": "Lorem ipsum dummy text for printing and technology",
+      "ChangePassword": "Change Password",
+      "Submit": "Submit",
+      "EditProfile" : "EditProfile",
+      "Error": {
+        "OldPasswordisrequired": "Old Password is required",
+        "NewPasswordisrequired": "New Password is required",
+        "min5characters": "(minimum 5 characters)."
+      }
+    },
+    "Common": {
+      "Welcome": "Welcome",
+      "Loremipsumdummytextforprintingandtechnology": "Lorem ipsum dummy text for printing and technology"
+    },
+    "Login": {
+      "Loginhere": "Login here",
+      "SignUp": "Sign Up",
+      "Login": "Login",
+      "ForgotPassword?": "Forgot Password?",
+      "NewUser": "New User ?",
+      "Error":{
+        "Usernamerequired": "Username  required",
+        "Incorrectemail" : "Incorrect email",
+        "Passwordrequired": "Password  required",
+        "UsernameorPasswordisincorrect" : "Username or Password is incorrect",
+        "ForgotPassword": "Forgot Password",
+        "Emailrequired": "Email  required"
+      }
+    },
+    "Notfound": {
+      "PAGENOTFOUND": "PAGE NOT FOUND !",
+      "YOUSEEMTOBETRYINGTOFINDHISWAYHOME": "YOU SEEM TO BE TRYING TO FIND HIS WAY HOME",
+      "Backtohome": "Back to home"
+    }
+  },
+
+
+  "shared": {
+    "imagemanagerpopup":{
+      "ImageManager":"Image Manager",
+      "CreateFolder":"Create Folder",
+      "Create":"Create",
+      "Upload":"Upload",
+      "Search":"Search"
+
+    }
+  },
+
+  "Customers":{
+    "Customer":{
+      "Customer":"Customer",
+      "Customers":"Customers",
+      "AddCustomer":"Add Customer",
+      "Delete":"Delete",
+      "Export":"Export",
+      "Import":"Import",
+      "ViewCustomer":"View Customer",
+      "ID":"#ID",
+      "Name":"Name",
+      "E-mailId":"E-mail Id",
+      "Group":"Group",
+      "DateAdded":"Date Added",
+      "Address":"Address",
+      "Action":"Action",
+      "Status":"Status",
+      "View":"View",
+      "Active":"Active",
+      "AddAddress":"Add Address",
+      "AddressLine1":"Address Line 1",
+      "AddressLine2":"Address Line 2",
+      "City":"City",
+      "State": "State" ,
+      "Pincode":"Pincode",
+      "AddressState":"Address State",
+      "Shipping":"Shipping",
+      "Billing":"Billing",
+      "AddressType":"Address Type",
+      "CustomerName":"Customer Name",
+      "Email":"Email",
+      "CustomerGroup":"Customer Group",
+      "Telephone":"Telephone",
+      "MoreInformation":"MoreInformation",
+      "General":"General",
+      "Password":"Password",
+      "AddCustomers":"Add Customers",
+      "Save":"Save",
+      "Cancel":"Cancel",
+      "CustomerDetails":"Customer Details",
+      "ConfirmPassword":"ConfirmPassword",
+      "Enabled":"Enabled",
+      "Disabled":"Disabled",
+      "Newsletter":"Newsletter",
+      "Safe":"Safe",
+      "MailStatus":"Mail Status",
+      "Yes":"Yes",
+      "No":"No"
+    },"Error":{
+      "AddressLine1IsRequired":"Address Line 1 Is Required",
+      "CityIsRequired":"City Is Required",
+      "StateIsRequired":"State Is Required",
+      "CustomerGroupIsRequired":"Customer Group Is Required",
+      "CustomerNameIsRequired":"  Customer Name Is Required",
+      "EmailIsRequired":"Email is required",
+      "EmailMustBeAValidEmailAddress":"Email must be a valid email address",
+      "TelephoneIsRequired":"Telephone Is Required",
+      "Telephoneallownumbersonly":"Telephone Only Allow Numbers Min- 6 && Max - 11",
+      "passwordIsRequired": "password Is Required",
+      "ConfirmpasswordIsMismatch":"Confirm  password Is Mismatch",
+      "newsletterIsRequired":"newsletter Is Required",
+      "StatusIsRequired":"Status Is Required",
+      "SafeIsRequired":"Safe Is Required",
+      "MailstatusIsRequired":"Mail status Is Required",
+      "ConfirmPassword":"Confirm Password",
+      "PincodeIsRequired":"Pincode Is Required",
+      "pincodeallownumbersonly":"Pincode Only Allow Numbers Min- 6 && Max - 8"
+
+    },
+    "CustomerPlaceholder":{
+      "CustomerGroup":"Customer Group",
+      "CustomerName":"Customer Name",
+      "Email":"Email",
+      "Telephone":"Telephone",
+      "Password":"Password"
+    },
+    "RecentActivity":"Recent Activity",
+    "Groups":"Groups"
+  },
+  "catalog": {
+    "product": {
+      "Products": "Products",
+      "ActiveProducts": "Active Products",
+      "In-activeProducts": "In-active Products",
+      "New": "NEW",
+      "Catalog": "Catalog",
+      "AddProduct": "Add product",
+      "Export": "Export",
+      "Import": "Import",
+      "Image": "Image",
+      "Sku": "SKU",
+      "ProductsName": "Products Name",
+      "Quantity": "Quantity",
+      "Price": "Price",
+      "Action": "Action",
+      "Status": "Status",
+      "Keyword": "Keyword",
+      "Min-price": "Min-price",
+      "Max-price": "Max-price",
+      "EnterSearchKeyword": "Enter Search Keyword",
+      "SkuNumber": "SKU Number",
+      "Reset": "Reset",
+      "ApplyFilters": "Apply Filters",
+      "Search": "Search",
+      "DoYouWantToDelete": "Do you want to delete ?",
+      "No": "No",
+      "Filters": "Filters",
+      "Yes": "Yes",
+      "Save": "Save",
+      "Cancel": "Cancel",
+      "Add": "Add",
+      "General": "General",
+      "Images": "Images",
+      "MetaTagTitle": "Meta Tag Title",
+      "ProductsDescriptions": "Product Description",
+      "MoreInformation": "More Information",
+      "Categories": "Categories",
+      "AvailableCategories": "Available Categories",
+      "AccessNameAccessPointDisplayname": "Access Name &amp Access Point Display name",
+      "SelectedCategories": "Selected Categories",
+      "categorisSelected": "categorisSelected",
+      "Data": "Data",
+      "Model": "Model",
+      "Upc": "UPC",
+      "Location": "Location",
+      "MinimumQuantity": "Minimum Quantity",
+      "SubstractStock": "Substract Stock",
+      "OutofStockStatus": "Out of Stock Status",
+      "RequiredShipping": "Required Shipping",
+      "DateAvailable": "Date Available",
+      "SortOrder": " Sort Order",
+      "Condition": "Condition",
+      "Addimages": "Add images",
+      "Feature": "IsFeature"
+    },
+    "layout": {
+      "ActiveProducts":"Active Products",
+      "InActiveProducts":"In-active Products",
+      "Search":"Search",
+      "Products":"Products",
+      "New":"New"
+    },
+    "Brand": {
+      "BrandName":"Brand Name",
+      "BrandImage":"Brand Image",
+      "AddBrand":"Add Brand",
+      "Brand":"Brand",
+      "Upload":"Upload",
+      "AddManufacturerBrand":"Add Manufacturer Brand"
+
+    },
+    "Error": {
+      "BrandNameRequired":"Brand Name required",
+      "BrandImageRequired":"Brand Image required",
+      "PriceRequired": "Price required",
+      "ProductNameRequired": " Product Name required",
+      "skuRequired": "sku required",
+      "MetaTagTitlerequired": "Meta Tag Title required",
+      "ProductDescriptionRequired": "Product Description required",
+      "ModelRequired": "Model required",
+      "UpcRequired": "UPC required",
+      "LocationRequired": "Location required",
+      "QuantityRequired": "Quantity required",
+      "MinimumQuantityrequired": "Minimum Quantity required",
+      "SubstractStockRequired": "Substract Stock required",
+      "OutofStockStatusRequired": "Out of Stock Status required",
+      "ShippingRequired": "Shipping required",
+      "DateRequired": "Date required",
+      "StatusRequired": " Status required",
+      "SortOrderRequired": "Sort Order required",
+      "ConditionRequired": " Condition required",
+      "CategoryNameRequired":"CategoryName  required",
+      "MetaTagDescriptionRequired":"MetaTagDescription  required",
+      "MetaTagKeywordRequired":"MetaTagKeyword  required",
+      "ParentRequired":"Parent  required"
+    },
+    "categories": {
+      "Categories": "Categories",
+      "Catalog": "Catalog",
+      "CategoriesName": "Categories Name",
+      "SortOrder": "Sort Order",
+      "Action": "Action",
+      "Status": "Status",
+      "AddCategories": "Add Categories",
+      "Export": "Export",
+      "Import": "Import",
+      "Filters": "Filters",
+      "Reset": "Reset",
+      "ApplyFilters": "Apply Filters",
+      " General": " General",
+      "More Information": "More Information",
+      "Save": "Save",
+      "Cancel": "Cancel",
+      "Parent": "Parent",
+      "Active": "Active",
+      "MetaTagDescription":"Meta Tag Description",
+      "MetaTagKeyword":"Meta Tag Keyword"
+    }
+
+  }
+
+}
+
+
+

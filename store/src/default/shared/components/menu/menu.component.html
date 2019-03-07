@@ -1,0 +1,29 @@
+<mat-toolbar class="top-navbar mat-elevation-z2" fxLayoutAlign="center center">
+    <a mat-button routerLink="/" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
+    <!--<a mat-button [matMenuTriggerFor]="menu" (click)="openMegaMenu()">Categories<mat-icon class="caret">arrow_drop_down</mat-icon></a>-->
+    <!--<mat-menu #menu="matMenu" [overlapTrigger]="false" class="mega-menu app-dropdown">-->
+        <!--<div fxLayout="row wrap">-->
+            <!--<div fxFlex="20" fxLayout="column" class="p-1" *ngFor="let category of categories">-->
+                <!--<a mat-menu-item routerLink="/products"><b>{{category.name}}</b></a>-->
+                <!--<mat-divider></mat-divider>-->
+                <!--<a mat-menu-item routerLink="/products" *ngFor="let child of category.children">{{child.name}}</a>-->
+            <!--</div>-->
+        <!--</div>-->
+           
+    <!--</mat-menu>-->
+    <a mat-button [routerLink]="['/products']" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">All Products</a>
+
+    <a mat-button [routerLink]="['/products', category.categoryId]" routerLinkActive="horizontal-active-link"  [routerLinkActiveOptions]="{exact:true}" *ngFor="let category of categories" (click)="openMegaMenu(category.categoryId)" >{{category.name}}</a>
+
+
+    <mat-menu #others="matMenu" class="app-dropdown">
+        <a mat-menu-item href="http://themeseason.com" target="_blank">External Link</a>
+        <a mat-menu-item>Menu item</a>
+        <a mat-menu-item>Menu item</a>
+        <a mat-menu-item>Menu item</a>
+    </mat-menu>
+    
+    <a mat-button routerLink="/contact" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Contact</a>
+
+</mat-toolbar>
+

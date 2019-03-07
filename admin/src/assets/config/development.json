@@ -1,0 +1,16 @@
+{
+  "api": {
+    "baseUrl": "http://localhost:8000/api"
+  },
+  "resize": {
+    "imageUrl": "http://localhost:8000/api/media/image-resize"
+  },
+  "notifications": {
+    "unauthorizedEndpoints": ["api/auth/login"],
+    "notFoundEndpoints": [
+      "api/products",
+      "api/account/login",
+      "api/account/register"
+    ]
+  }
+}

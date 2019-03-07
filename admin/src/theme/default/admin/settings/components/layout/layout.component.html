@@ -1,0 +1,30 @@
+<div class="settings-section">
+    <div class="settings-header">
+      <h3>Settings</h3>
+    </div>
+  </div>
+
+  <div class="settings-sidebar">
+    <ul class="flex">
+      <li> <a href="javascript:void(0)" [routerLink]="['/settings/role']"  [routerLinkActive]="'active'"> Role </a> </li>
+      <li> <a href="javascript:void(0)" [routerLink]="['/settings/user']"  [routerLinkActive]="'active'"> User </a> </li>
+      <li> <a href="javascript:void(0)" [routerLink]="['/settings/generalsetting']"  [routerLinkActive]="'active'"> General Settings </a> </li>
+        <li> <a href="javascript:void(0)" [matMenuTriggerFor]="sitesettings"> Site Settings </a> </li>
+        <mat-menu [backdropClass]="'settings-menu'" #sitesettings="matMenu">
+            <button mat-menu-item [routerLink]="['/settings/appearance']">Appearance</button>
+            <button mat-menu-item [routerLink]="['/settings/social']">Social</button>
+            <button mat-menu-item [routerLink]="['/settings/seo']">Seo</button>
+        </mat-menu>
+      <li> <a href="javascript:void(0)" [matMenuTriggerFor]="localizations"> Localizations </a> </li>
+      <mat-menu [backdropClass]="'settings-menu'" #localizations="matMenu">
+          <button mat-menu-item [routerLink]="['/settings/countries']">Countries</button>
+          <button mat-menu-item [routerLink]="['/settings/zone']">Zone</button>
+          <button mat-menu-item [routerLink]="['/settings/currency']">Currencies</button>
+          <button mat-menu-item [routerLink]="['/settings/language']">Languages</button>
+          <button mat-menu-item [routerLink]="['/settings/order-status']">Order Status</button>
+          <button mat-menu-item [routerLink]="['/settings/stock-status']">Stock Status</button>
+        </mat-menu>
+    </ul>
+  </div>
+
+  <router-outlet></router-outlet>
