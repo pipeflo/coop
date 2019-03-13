@@ -1,1 +1,16 @@
-define({  "name": "SpurtCommerce",  "version": "2.0.0",  "description": "SpurtCommerce RESTFUL API Document",  "title": "SpurtCommerce RESTFUL API Document",  "url": "http://localhost:8000",  "sampleUrl": "http://localhost:8000",  "defaultVersion": "0.0.0",  "apidoc": "0.3.0",  "generator": {    "name": "apidoc",    "time": "2019-03-04T20:21:48.574Z",    "url": "http://apidocjs.com",    "version": "0.17.7"  }});
+define({
+  "name": "SpurtCommerce",
+  "version": "2.0.0",
+  "description": "SpurtCommerce RESTFUL API Document",
+  "title": "SpurtCommerce RESTFUL API Document",
+  "url": "http://localhost:8000",
+  "sampleUrl": "http://localhost:8000",
+  "defaultVersion": "0.0.0",
+  "apidoc": "0.3.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2019-03-11T16:46:45.760Z",
+    "url": "http://apidocjs.com",
+    "version": "0.17.7"
+  }
+});
